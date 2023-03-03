@@ -4,7 +4,7 @@ import { Product } from "../types/product.type.ts";
 const client = new MongoClient();
 
 try {
-    await client.connect("mongodb://127.0.0.1:27017");
+    await client.connect("mongodb://127.0.0.1:27017/serverDeno");
     console.log("🆗 Conectados a MongoDB");
 } catch (error) {
     console.log(error);
